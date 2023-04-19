@@ -331,13 +331,15 @@ section {
 }
 
 .skills .progress .skill {
-  padding: 0;
+  padding: 5px 0 0 5px;
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   color: #050d18;
+  z-index: 30px;
 }
 .skills .progress .skill .val {
   float: right;
@@ -347,6 +349,7 @@ section {
 .skills .progress-bar-wrap {
   background: #dce8f8;
   height: 15px;
+  border-radius: 10px;
 }
 
 .skills .progress-bar {
