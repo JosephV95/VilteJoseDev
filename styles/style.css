@@ -38,8 +38,8 @@ a:hover {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  width: 150px;
+  border: 5px solid #2c2f3f;
 }
 
 #header .profile h1 {
