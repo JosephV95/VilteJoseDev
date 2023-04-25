@@ -251,13 +251,13 @@ a:hover {
 section {
   padding: 30px 0;
   overflow: hidden;
-  /* color: white;
-  background-color: #000; */
+  /* color: white; */
+  background: #e7eaf0;
 }
 
-.section-bg {
+/* .section-bg {
   background: #f5f8fd;
-}
+} */
 
 .section-title {
   padding-bottom: 30px;
@@ -393,8 +393,28 @@ section {
 
 
 
-
-
+.item-proyect{
+  /* background-color: #4780cf; */
+  background-color: #040b14;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(5, 125, 245);
+  position: relative;
+  margin: 3px 5px;
+}
+.item-proyect .detailProyect{
+ padding-top: 8px;
+}
+.item-proyect .links{
+ font-display: flex;
+ justify-content: space-evenly;
+}
+.item-proyect .links a{
+  /* display: inline-block; */
+  width: 45%;
+}
 
 
 
@@ -406,6 +426,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 10px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -429,7 +450,7 @@ section {
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
-  display: flex;
+  display: inline-block;
   justify-content: center;
 }
 
