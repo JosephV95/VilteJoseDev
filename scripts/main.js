@@ -27,8 +27,6 @@ AOS.init({
 });
 
 
-
-
 const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -92,8 +90,9 @@ const select = (el, all = false) => {
 
 
   /**
-   * Mobile nav toggle
+   * Mobile nav toggle 
    */
+//?  Con esto se cambiara el icono del boton cuando se le de click (pero luego no ocultara el nav al seleccionar)
   on('click', '.mobile-nav-toggle', function(e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bx-list-ul')
@@ -103,6 +102,8 @@ const select = (el, all = false) => {
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
+
+// ? Aqui se soluciona el problema anterior y ahora el nav se ocultara a la vez que cambiara el icono del menú nav en mobile
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
@@ -118,17 +119,6 @@ const select = (el, all = false) => {
     }
   }, true)
 
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-//   window.addEventListener('load', () => {
-//     if (window.location.hash) {
-//       if (select(window.location.hash)) {
-//         scrollto(window.location.hash)
-//       }
-//     }
-//   });
 
   
 
