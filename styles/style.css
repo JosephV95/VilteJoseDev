@@ -398,19 +398,33 @@ section {
   border: 3px outset rgb(0, 250, 154);
   position: relative;
   margin: 5px 5px;
+
+  overflow: hidden;
 }
 .item-proyect .img-fluid{
-  opacity: .4;
+  opacity: .8;
 }
 .item-proyect:hover.item-proyect .img-fluid{
-  opacity: 1;
+  opacity: .15;
 }
+
+.item-proyect:hover.item-proyect .detailProyect .text-pro{
+  top: 3rem;
+}
+
 .item-proyect .detailProyect{
  padding-top: 8px;
 }
+.item-proyect .detailProyect .text-pro{
+  position: absolute;
+  padding: 0 25px;
+  bottom: -20rem;
+  font-size: 1.2rem;
+}
 .item-proyect .links{
- font-display: flex;
- justify-content: space-evenly;
+  position: relative;
+  /* display: flex; */
+  justify-content: space-evenly;
 }
 .item-proyect .links a{
   width: 45%;
