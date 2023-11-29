@@ -342,43 +342,12 @@ section {
 --------------------------------------------------------------*/
 
 .skills h3{
-  color: rgb(20, 157, 221);
+  color: #2ca6df;
   text-align: center;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-shadow: 3px 5px 7px #154e69;
 }
-.skills .progress {
-  height: 45px;
-  display: block;
-  background: rgba(0, 0, 0, 0);
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 5px 10px 0 5px;
-  margin: 0 0 6px 0;
-  color: rgb(225, 225, 225);
-  /* text-transform: uppercase; */
-  display: block;
-  font-weight: 600;
-  font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-/* .skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 3px;
-  border-radius: 10px;
-} */
-
-/* .skills .progress-bar {
-  height: 3px;
-  transition: 0.9s;
-  border-radius: 10px;
-} */
 
 /*--------------------------------------------------------------
 # Proyects
