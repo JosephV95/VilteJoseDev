@@ -6,16 +6,51 @@ const dataJLV = {
 
   ],
   habilidades: [
-    {frontend: []},
+    {frontend: [
+      { name: "React.js",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
+      },
+      { name: "Angular",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg`,
+      },
+      { name: "HTML5",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg`,
+      },
+      { name: "CSS3",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`,
+      },
+      { name: "Javascript",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
+      },
+      { name: "Typescript",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg`,
+      },
+      { name: "Bootstrap",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
+      },
+      { name: "Sass",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg`,
+      },
+      { name: "Redux",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
+      },
+      
+    ]},
     {backend: []},
-    {otras: []}
+    {otras: [
+      {name:"Scrum",
+       url:"https://w7.pngwing.com/pngs/843/823/png-transparent-agile-faculty-practical-strategies-for-managing-research-service-and-teaching-agile-software-development-scrum-computer-icons-computer-software-values-blue-text-trademark.png"
+      },
+    ]}
   ],
   proyectos: [
     {
       nombre: "MyTinerary",
       descripcion: "descripcion de mytinerary",
       img: "assets/img/proyect4.jpg",
-      tecnologias: ["vue","css"],
+      tecnologias: [{ nombre: "Angular",
+      svg: `<path fill="#B3B3B3" d="M63.81 1.026L4.553 21.88l9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635z"></path><path fill="#A6120D" d="M117.536 25.998L63.672 7.629v112.785l45.141-24.983z"></path><path fill="#DD1B16" d="M11.201 26.329l8.026 69.434 44.444 24.651V7.627z"></path><path fill="#F2F2F2" d="M78.499 67.67l-14.827 6.934H48.044l-7.347 18.374-13.663.254 36.638-81.508L78.499 67.67zm-1.434-3.491L63.77 37.858 52.864 63.726h10.807l13.394.453z"></path><path fill="#B3B3B3" d="M63.671 11.724l.098 26.134 12.375 25.888H63.698l-.027 10.841 17.209.017 8.042 18.63 13.074.242z"></path>`,
+    }],
       demo: "https://mytinerarydev.netlify.app/",
       repo: "#",
     },
@@ -43,6 +78,7 @@ const dataJLV = {
 
 const contenedorSobreMi = document.getElementById("contenedorSobreMi");
 const contenedorProyectos = document.getElementById("contenedorProyectos");
+const contenedorSFront = document.getElementById("contenedorSFront");
 
 function cargarAbout() {
   contenedorSobreMi.innerHTML = dataJLV.sobreMi  
@@ -62,7 +98,13 @@ function cargarProyectos(unArray) {
             </div>
             
             <p><b>Tecnologías y librerías utilizadas:</b>
-              ${ev.tecnologias.map(tecnologia => `<span >${tecnologia}, </span>`).join('')}
+              ${ev.tecnologias.map(tecnologia => 
+                `<span>
+              
+            
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="15px" />
+          
+           ${tecnologia.nombre}, </span>`).join('')}
             </p>
           </div>
           <div class="links row">
