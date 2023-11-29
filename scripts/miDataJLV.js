@@ -1,4 +1,15 @@
 const dataJLV = {
+  sobreMi: ` <p>💻 ¡Bienvenido! Soy un entusiasta Desarrollador Full Stack, con un mayor enfoque en el stack MERN (MongoDB, Express.js, React.js, Node.js). 
+  Mi portafolio presenta proyectos que demuestran mi pasión y dedicación por el desarrollo web. Disfruto afrontar nuevos desafíos y cada línea de código refleja mi compromiso con el crecimiento continuo.</p>
+  `,
+  educación: [
+
+  ],
+  habilidades: [
+    {frontend: []},
+    {backend: []},
+    {otras: []}
+  ],
   proyectos: [
     {
       nombre: "MyTinerary",
@@ -30,22 +41,29 @@ const dataJLV = {
   ]
 }
 
-const contenedor = document.getElementById("contenedorProyectos")
+const contenedorSobreMi = document.getElementById("contenedorSobreMi");
+const contenedorProyectos = document.getElementById("contenedorProyectos");
 
-function cargarSkills(unArray) {
+function cargarAbout() {
+  contenedorSobreMi.innerHTML = dataJLV.sobreMi  
+}
+cargarAbout()
+
+function cargarProyectos(unArray) {
     let infoProyectos = ""
     unArray.forEach((ev)=>{ infoProyectos +=
-        `<div class="col-lg-6 col-md-6 ">
+      `<div class="col-md-6 col-lg-5">
         <div class="item-proyect">
-          <img src=${ev.img} class="img-fluid rounded" alt="proyecto4">
+          <img src=${ev.img} class="img-fluid rounded" alt="proyecto${ev.name}">
           <div class="detailProyect">
             <h5>${ev.nombre}</h5>
             <div class="text-pro">
               <p>${ev.descripcion} </p>
             </div>
             
-            <p><b>Tecnologías y librerías utilizadas:</b></p>
-              ${ev.tecnologias.map(tecnologia => `<span >${tecnologia} </span>`).join('')}
+            <p><b>Tecnologías y librerías utilizadas:</b>
+              ${ev.tecnologias.map(tecnologia => `<span >${tecnologia}, </span>`).join('')}
+            </p>
           </div>
           <div class="links row">
             <a href=${ev.demo} target="_blank" class="btn btn-outline-info "><i class="bx bx-link"></i> Demo</a>
@@ -55,7 +73,7 @@ function cargarSkills(unArray) {
       </div>
       `
     })
-    contenedor.innerHTML = infoProyectos
+    contenedorProyectos.innerHTML = infoProyectos
 }
 
-cargarSkills(dataJLV.proyectos)
+cargarProyectos(dataJLV.proyectos)
