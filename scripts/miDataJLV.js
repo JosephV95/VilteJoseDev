@@ -5,14 +5,8 @@ const dataJLV = {
   educación: [
 
   ],
-  habilidades: [
-    {frontend: [
-      { name: "React.js",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
-      },
-      { name: "Angular",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg`,
-      },
+  habilidades: {
+    frontend: [
       { name: "HTML5",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg`,
       },
@@ -21,6 +15,15 @@ const dataJLV = {
       },
       { name: "Javascript",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
+      },
+      { name: "React.js",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
+      },
+      { name: "Angular",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg`,
+      },
+      { name: "Redux",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
       },
       { name: "Typescript",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg`,
@@ -31,18 +34,14 @@ const dataJLV = {
       { name: "Sass",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg`,
       },
-      { name: "Redux",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
-      },
-      
-    ]},
-    {backend: []},
-    {otras: [
+    ],
+    backend: [],
+    otras: [
       {name:"Scrum",
        url:"https://w7.pngwing.com/pngs/843/823/png-transparent-agile-faculty-practical-strategies-for-managing-research-service-and-teaching-agile-software-development-scrum-computer-icons-computer-software-values-blue-text-trademark.png"
       },
-    ]}
-  ],
+    ]
+  },
   proyectos: [
     {
       nombre: "MyTinerary",
@@ -100,7 +99,6 @@ function cargarProyectos(unArray) {
             <p><b>Tecnologías y librerías utilizadas:</b>
               ${ev.tecnologias.map(tecnologia => 
                 `<span>
-              
             
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="15px" />
           
@@ -119,3 +117,20 @@ function cargarProyectos(unArray) {
 }
 
 cargarProyectos(dataJLV.proyectos)
+
+function cargarSFront(array) {
+  let skillsFront = array.map(skill => {
+    return `
+    <span class="text-center " style="width: 8rem;">
+      <span>
+        <img src=${skill.url} height="50px" />
+      </span>
+      <p>${skill.name}</p>
+    </span>`;
+  });
+
+  // con join('') para convertir el array de strings en una sola cadena de texto
+  contenedorSFront.innerHTML = skillsFront.join('');
+}
+
+cargarSFront(dataJLV.habilidades.frontend);
