@@ -35,10 +35,35 @@ const dataJLV = {
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg`,
       },
     ],
-    backend: [],
+    backend: [
+      { name: "Node.js",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg`,
+      },
+      { name: "Express.js",
+        url: `https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png`,
+      },
+      { name: "Java",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg`,
+      },
+      { name: "MongoDB",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg`,
+      },
+      { name: "MySQL",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg`,
+      },
+    ],
     otras: [
       {name:"Scrum",
        url:"https://w7.pngwing.com/pngs/843/823/png-transparent-agile-faculty-practical-strategies-for-managing-research-service-and-teaching-agile-software-development-scrum-computer-icons-computer-software-values-blue-text-trademark.png"
+      },
+      { name: "Sass",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/`,
+      },
+      { name: "Sass",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/`,
+      },
+      { name: "Sass",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/`,
       },
     ]
   },
@@ -78,6 +103,8 @@ const dataJLV = {
 const contenedorSobreMi = document.getElementById("contenedorSobreMi");
 const contenedorProyectos = document.getElementById("contenedorProyectos");
 const contenedorSFront = document.getElementById("contenedorSFront");
+const contenedorSBack = document.getElementById("contenedorSBack");
+const contenedorSOtras = document.getElementById("contenedorSOtras");
 
 function cargarAbout() {
   contenedorSobreMi.innerHTML = dataJLV.sobreMi  
@@ -118,19 +145,20 @@ function cargarProyectos(unArray) {
 
 cargarProyectos(dataJLV.proyectos)
 
-function cargarSFront(array) {
-  let skillsFront = array.map(skill => {
+function cargarSkills(array, unContenedor) {
+  let dataSkills = array.map(skill => {
     return `
     <span class="text-center " style="width: 8rem;">
       <span>
-        <img src=${skill.url} height="50px" />
+        <img src=${skill.url} height="60px" />
       </span>
       <p>${skill.name}</p>
     </span>`;
   });
 
   // con join('') para convertir el array de strings en una sola cadena de texto
-  contenedorSFront.innerHTML = skillsFront.join('');
+  unContenedor.innerHTML = dataSkills.join('');
 }
 
-cargarSFront(dataJLV.habilidades.frontend);
+cargarSkills(dataJLV.habilidades.frontend, contenedorSFront);
+cargarSkills(dataJLV.habilidades.backend, contenedorSBack);
