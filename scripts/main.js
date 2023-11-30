@@ -1,7 +1,7 @@
 
 //? crea la animación del header  
 var typed = new Typed(".typed", {
-  strings: ["Full-Stack","Front-End"],
+  strings: ["Full Stack","Frontend","Backend"],
   typeSpeed: 69, //Velocidad en milisegundos en poner cada letra
   backSpeed: 69, // Velocidad en milisegundos para borrrar una letra,
   loop: true, // Repetir el array de strings
