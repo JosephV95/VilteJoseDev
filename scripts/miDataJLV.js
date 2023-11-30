@@ -3,7 +3,37 @@ const dataJLV = {
   Mi portafolio presenta proyectos que demuestran mi pasión y dedicación por el desarrollo web. Disfruto afrontar nuevos desafíos y cada línea de código refleja mi compromiso con el crecimiento continuo.</p>
   `,
   educación: [
-
+    { 
+      titulo: "DESARROLLADOR WEB FULL STACK MERN",
+      fecha: "Julio - Septiembre 2023",
+      instituto: "MindHub LA",
+      descripcion: "Bootcamp intensivo en el desarrollo e implementación del stack MERN (MongoDB, Express.js, React.js, Node.js), construyendo una base sólida para el desarrollo de aplicaciones web modernas."
+    },
+    {
+      titulo: "DESARROLLADOR WEB FRONTEND",
+      fecha: "Enero - Marzo 2023",
+      instituto: "MindHub LA",
+      descripcion: "Bootcamp centrado en el aprendizaje Frontend mediante la metodología de proyectos reales, evolucionando en dificultad para adquirir las habilidades de un Desarrollador Web."
+    },
+    { 
+      titulo: "DESARROLLADOR WEB FULL STACK",
+      fecha: "Diciembre 2021 - Junio 2022",
+      instituto: "Argentina Programa 4.0",
+      descripcion: "Curso de Desarrollador Web Full-Stack donde se estudian tecnologías de desarrollo Frontend y Backend."
+    },
+    { 
+      titulo: "TÉCNICO UNIVERSITARIO EN MANTENIMIENTO INDUSTRIAL",
+      fecha: "2015 - 2018",
+      instituto: "ITU - Instituto Tecnológico Universitario (Universidad Nacional de Cuyo)",
+      descripcion: "Aptitudes en electricidad, mecánica, automatización, informática, electrónica, entre otras."
+    },
+  ],
+  experiencia: [
+    { 
+      titulo: "Desarrollador Freelance",
+      fecha: "2023 - Presente",
+      descripcion: `Desarrollador Web Freelance apasionado y autodidacta, especializado en la creación de proyectos innovadores. Mi enfoque se centra en la aplicación práctica de los conocimientos adquiridos, demostrando habilidades sólidas en la resolución de problemas y la adaptabilidad a las últimas tendencias tecnológicas. Busco oportunidades para colaborar en desafíos emocionantes y contribuir al éxito de proyectos dinámicos.`
+    },
   ],
   habilidades: {
     frontend: [
@@ -184,6 +214,8 @@ const contenedorProyectos = document.getElementById("contenedorProyectos");
 const contenedorSFront = document.getElementById("contenedorSFront");
 const contenedorSBack = document.getElementById("contenedorSBack");
 const contenedorSOtras = document.getElementById("contenedorSOtras");
+const contenedorEducacion = document.getElementById("contenedorEduc");
+const contenedorExperiencia = document.getElementById("contenedorExp");
 
 function cargarAbout() {
   contenedorSobreMi.innerHTML = dataJLV.sobreMi  
@@ -239,3 +271,19 @@ function cargarSkills(array, unContenedor) {
 cargarSkills(dataJLV.habilidades.frontend, contenedorSFront);
 cargarSkills(dataJLV.habilidades.backend, contenedorSBack);
 cargarSkills(dataJLV.habilidades.otras, contenedorSOtras);
+
+function cargarEducOExp(unArray, unContenedor){
+  let infoACargar = unArray.map((item)=>{
+    return `
+    <div class="resume-item">
+      <h4>${item.titulo}</h4>
+      <h5>${item.fecha}</h5>
+      <p class="mb-1" ><em><b>${item.instituto}</b></em></p>
+      <p class="lh-sm fw-light">${item.descripcion}</p>
+    </div>`
+  });
+  unContenedor.innerHTML = infoACargar.join('')
+}
+
+cargarEducOExp(dataJLV.educación, contenedorEducacion);
+cargarEducOExp(dataJLV.experiencia, contenedorExperiencia)
