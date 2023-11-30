@@ -73,7 +73,8 @@ const dataJLV = {
   proyectos: [
     {
       nombre: "MyTinerary",
-      descripcion: "Aplicación Web Full Stack, CRUD (Crear, Leer, Actualizar, Eliminar) ",
+      descripcion: `Aplicación Web Full Stack con frontend desarrollado en React y JavaScript, haciendo uso de Redux para el manejo de estados. 
+        En el backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
       img: "assets/img/proyect5.jpg",
       tecnologias: [
         { name: "React",
@@ -106,7 +107,7 @@ const dataJLV = {
     },
     {
       nombre: "Harry Potter Data",
-      descripcion: "Proyecto web SPA, cuenta con enrutamiento propio de Angular y se utilizó una API para obtener la información de los personajes. Además cuenta con distintos tipos de filtrados combinables.",
+      descripcion: "Proyecto de aplicación web de página única (SPA) que destaca por su enrutamiento integrado con Angular y la integración de una API para obtener datos de personajes. Cuenta con una variedad de filtros, los cuales pueden combinarse para mejorar la experiencia del usuario.",
       img: "assets/img/proyect4.jpg",
       tecnologias: [
         { name: "Angular",
@@ -127,6 +128,27 @@ const dataJLV = {
       ],
       demo: "https://harrypotter-data.web.app/home",
       repo: "https://github.com/JosephV95/Harry-Potter-Data.git",
+    },
+    {
+      nombre: "Mi Portfolio",
+      descripcion: `El frontend de mi portfolio actual está creado con HTML y CSS, incorporando funcionalidad e interactividad mediante Javascript Vanilla.`,
+      img: "assets/img/proyect6.jpg",
+     tecnologias: [
+        { name: "HTML5",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg`,
+        },
+        { name: "CSS3",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`,
+        },
+        { name: "Javascript",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
+        },
+        { name: "Bootstrap",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
+        },
+     ],
+      demo: "https://viltejosedev.netlify.app",
+      repo: "https://github.com/JosephV95/VilteJoseDev.git",
     },
     {
       nombre: "Amazing Events",
@@ -174,15 +196,15 @@ function cargarProyectos(unArray) {
       `<div class="col-md-6 col-lg-5">
         <div class="item-proyect">
           <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}">
-          <div class="detailProyect">
+          <div class="detailProyect mt-1">
             <h5>${ev.nombre}</h5>
             <div class="text-pro">
               <p>${ev.descripcion} </p>
             </div>
             
-            <p class="d-inline" ><b>Tecnologías utilizadas:</b></p>
+            <p class="d-inline" ><b><i>Tecnologías utilizadas:</i></b></p>
               ${ev.tecnologias.map(tecnologia => `
-                <span class="d-inline-block ms-2 tecItem">
+                <span class="d-inline-block ms-1 tecItem">
                   <img src=${tecnologia.url} height="20px" /> <p class="d-inline pt-2">${tecnologia.name} </p>
                 </span>`).join('')}
           </div>
