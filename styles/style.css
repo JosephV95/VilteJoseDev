@@ -288,16 +288,15 @@ section {
 # Resume (About)
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #1f5297;
+  margin-bottom: 15px;
+  color: #255caa;
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
+  padding: 0 0 15px 15px;
+  /* margin-top: -2px; */
   border-left: 2px solid #1f5297;
   position: relative;
 }
@@ -309,16 +308,17 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: rgb(196, 193, 193);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
   background: #1e406d;
-  padding: 5px 15px;
+  padding: 3px 15px;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  border-radius: 15px;
 }
 
 .resume .resume-item:last-child {
