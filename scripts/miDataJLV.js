@@ -76,25 +76,25 @@ const dataJLV = {
       descripcion: "Aplicación Web Full Stack, CRUD (Crear, Leer, Actualizar, Eliminar) ",
       img: "assets/img/proyect5.jpg",
       tecnologias: [
-        { name: "React.js",
+        { name: "React",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
-        },
-        { name: "Redux",
-          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
         },
         { name: "Javascript",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
         },
+        { name: "Redux",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
+        },
         { name: "Bootstrap",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
         },
-        { name: "CSS3",
+        { name: "CSS",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`,
         },
-        { name: "Node.js",
+        { name: "Node",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg`,
         },
-        { name: "Express.js",
+        { name: "Express",
           url: `https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png`,
         },
         { name: "MongoDB",
@@ -106,7 +106,7 @@ const dataJLV = {
     },
     {
       nombre: "Harry Potter Data",
-      descripcion: "Proyecto web SPA, cuenta con enrutamiento propio de Angular y se utilizó una API para obtener la información de los personajes. Además las cuenta con distintos tipos de filtrado que pueden ser utilizados de manera combinada.",
+      descripcion: "Proyecto web SPA, cuenta con enrutamiento propio de Angular y se utilizó una API para obtener la información de los personajes. Además cuenta con distintos tipos de filtrados combinables.",
       img: "assets/img/proyect4.jpg",
       tecnologias: [
         { name: "Angular",
@@ -132,7 +132,7 @@ const dataJLV = {
       nombre: "Amazing Events",
       descripcion: `Proyecto Frontend implementado con Vue js (<i>en repositorio se encuentra disponible el desarrollo en 
           Javascript Vanilla</i>), la información de los eventos se obtiene de una API. 
-          La web cuenta con dos tipos de filtrado, que pueden ser usados de forma combinada.`,
+          La web cuenta con dos tipos de filtros combinables.`,
       img: "assets/img/proyect3.jpg",
      tecnologias: [
         { name: "Vue.js",
@@ -173,23 +173,22 @@ function cargarProyectos(unArray) {
     unArray.forEach((ev)=>{ infoProyectos +=
       `<div class="col-md-6 col-lg-5">
         <div class="item-proyect">
-          <img src=${ev.img} class="img-fluid rounded" alt="proyecto${ev.name}">
+          <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}">
           <div class="detailProyect">
             <h5>${ev.nombre}</h5>
             <div class="text-pro">
               <p>${ev.descripcion} </p>
             </div>
             
-            <p ><b>Tecnologías utilizadas:</b>
+            <p class="d-inline" ><b>Tecnologías utilizadas:</b></p>
               ${ev.tecnologias.map(tecnologia => `
-                <span>
-                  <img src=${tecnologia.url} height="15px" /> ${tecnologia.name } 
-                </span>`).join('-')}
-            </p>
+                <span class="d-inline-block ms-2 tecItem">
+                  <img src=${tecnologia.url} height="20px" /> <p class="d-inline pt-2">${tecnologia.name} </p>
+                </span>`).join('')}
           </div>
-          <div class="links row">
-            <a href=${ev.demo} target="_blank" class="btn btn-outline-info "><i class="bx bx-link"></i> Demo</a>
-            <a href=${ev.repo} target="_blank" class="btn btn-outline-info "><i class="bx bxl-github"></i> Repo</a>
+          <div class="links row mt-2">
+            <a href=${ev.demo} target="_blank" class="btn btn-outline-warning "><i class="bx bx-link"></i> Demo</a>
+            <a href=${ev.repo} target="_blank" class="btn btn-outline-primary "><i class="bx bxl-github"></i> Repo</a>
           </div>
         </div>
       </div>
