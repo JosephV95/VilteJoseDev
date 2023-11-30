@@ -37,66 +37,123 @@ const dataJLV = {
     ],
     backend: [
       { name: "Node.js",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg`,
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg`,
       },
       { name: "Express.js",
         url: `https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png`,
       },
-      { name: "Java",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg`,
-      },
       { name: "MongoDB",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg`,
+      },
+      { name: "Java",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg`,
       },
       { name: "MySQL",
         url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg`,
       },
+      { name: "Postman",
+        url: `https://cdn.worldvectorlogo.com/logos/postman.svg`,
+      },
     ],
     otras: [
-      {name:"Scrum",
-       url:"https://w7.pngwing.com/pngs/843/823/png-transparent-agile-faculty-practical-strategies-for-managing-research-service-and-teaching-agile-software-development-scrum-computer-icons-computer-software-values-blue-text-trademark.png"
+      { name: "Inglés Técnico",
+        url: `https://cdn-icons-png.flaticon.com/512/8716/8716483.png`,
       },
-      { name: "Sass",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/`,
+      { name: "Git",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg`,
       },
-      { name: "Sass",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/`,
+      { name: "Github",
+        url: `https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png`,
       },
-      { name: "Sass",
-        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/`,
+      { name:"Metodología SCRUM",
+        url:"https://seeklogo.com/images/S/scrum-logo-B057CBD9B8-seeklogo.com.png"
       },
     ]
   },
   proyectos: [
     {
       nombre: "MyTinerary",
-      descripcion: "descripcion de mytinerary",
-      img: "assets/img/proyect4.jpg",
-      tecnologias: [{ nombre: "Angular",
-      svg: `<path fill="#B3B3B3" d="M63.81 1.026L4.553 21.88l9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635z"></path><path fill="#A6120D" d="M117.536 25.998L63.672 7.629v112.785l45.141-24.983z"></path><path fill="#DD1B16" d="M11.201 26.329l8.026 69.434 44.444 24.651V7.627z"></path><path fill="#F2F2F2" d="M78.499 67.67l-14.827 6.934H48.044l-7.347 18.374-13.663.254 36.638-81.508L78.499 67.67zm-1.434-3.491L63.77 37.858 52.864 63.726h10.807l13.394.453z"></path><path fill="#B3B3B3" d="M63.671 11.724l.098 26.134 12.375 25.888H63.698l-.027 10.841 17.209.017 8.042 18.63 13.074.242z"></path>`,
-    }],
+      descripcion: "Aplicación Web Full Stack, CRUD (Crear, Leer, Actualizar, Eliminar) ",
+      img: "assets/img/proyect5.jpg",
+      tecnologias: [
+        { name: "React.js",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
+        },
+        { name: "Redux",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
+        },
+        { name: "Javascript",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
+        },
+        { name: "Bootstrap",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
+        },
+        { name: "CSS3",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`,
+        },
+        { name: "Node.js",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg`,
+        },
+        { name: "Express.js",
+          url: `https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png`,
+        },
+        { name: "MongoDB",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg`,
+        },
+      ],
       demo: "https://mytinerarydev.netlify.app/",
-      repo: "#",
+      repo: "https://github.com/JosephV95/mytinerary-joseVilte",
     },
     {
-        nombre: "Harry Potter Data",
-        descripcion: "Web SPA realizada con Angular v.16, cuenta con enrutamiento propio de Angular, se utilizó una API para lainformación de los personajes y se utilizó un modal para información más detallada de los personajes.",
-        img: "assets/img/proyect4.jpg",
-        tecnologias: ["Angular", "Typescrypt", "Bootstrap", "SASS", "HTML"],
-        demo: "https://harrypotter-data.web.app/home",
-        repo: "https://github.com/JosephV95/Harry-Potter-Data.git",
-      },
-      {
-        nombre: "Amazing Events",
-        descripcion: `Proyecto Frontend implementado con Vue js (<i>en repositorio se encuentra disponible el desarrollo en 
-            Javascript Vanilla</i>), se utilizó una API donde se obtiene la
-            información de los eventos. La página cuenta con dos tipos de filtrado, que pueden ser usados de manera
-            única como combinada.`,
-        img: "assets/img/proyect3.jpg",
-        tecnologias: ["Vue.js", "Javascript", "HTML5 & CSS3", "Bootstrap"],
-        demo: "https://josephv95.github.io/Mindhub-Javascript-Task/",
-        repo: "https://github.com/JosephV95/Mindhub-Javascript-Task.git",
-      },
+      nombre: "Harry Potter Data",
+      descripcion: "Proyecto web SPA, cuenta con enrutamiento propio de Angular y se utilizó una API para obtener la información de los personajes. Además las cuenta con distintos tipos de filtrado que pueden ser utilizados de manera combinada.",
+      img: "assets/img/proyect4.jpg",
+      tecnologias: [
+        { name: "Angular",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg`,
+        },
+        { name: "Typescript",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg`,
+        },
+        { name: "Bootstrap",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
+        },
+        { name: "HTML5",
+        url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg`,
+        },
+        { name: "Sass",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg`,
+        },
+      ],
+      demo: "https://harrypotter-data.web.app/home",
+      repo: "https://github.com/JosephV95/Harry-Potter-Data.git",
+    },
+    {
+      nombre: "Amazing Events",
+      descripcion: `Proyecto Frontend implementado con Vue js (<i>en repositorio se encuentra disponible el desarrollo en 
+          Javascript Vanilla</i>), la información de los eventos se obtiene de una API. 
+          La web cuenta con dos tipos de filtrado, que pueden ser usados de forma combinada.`,
+      img: "assets/img/proyect3.jpg",
+     tecnologias: [
+        { name: "Vue.js",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg`,
+        },
+        { name: "HTML5",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg`,
+        },
+        { name: "CSS3",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg`,
+        },
+        { name: "Javascript",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
+        },
+        { name: "Bootstrap",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
+        },
+     ],
+      demo: "https://josephv95.github.io/Mindhub-Javascript-Task/",
+      repo: "https://github.com/JosephV95/Mindhub-Javascript-Task.git",
+    },
   ]
 }
 
@@ -123,18 +180,16 @@ function cargarProyectos(unArray) {
               <p>${ev.descripcion} </p>
             </div>
             
-            <p><b>Tecnologías y librerías utilizadas:</b>
-              ${ev.tecnologias.map(tecnologia => 
-                `<span>
-            
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="15px" />
-          
-           ${tecnologia.nombre}, </span>`).join('')}
+            <p ><b>Tecnologías utilizadas:</b>
+              ${ev.tecnologias.map(tecnologia => `
+                <span>
+                  <img src=${tecnologia.url} height="15px" /> ${tecnologia.name } 
+                </span>`).join('-')}
             </p>
           </div>
           <div class="links row">
             <a href=${ev.demo} target="_blank" class="btn btn-outline-info "><i class="bx bx-link"></i> Demo</a>
-            <a href=${ev.repo} target="_blank" class="btn btn-outline-info "><i class="bx bxl-github"></i> Repositorio</a>
+            <a href=${ev.repo} target="_blank" class="btn btn-outline-info "><i class="bx bxl-github"></i> Repo</a>
           </div>
         </div>
       </div>
@@ -162,3 +217,4 @@ function cargarSkills(array, unContenedor) {
 
 cargarSkills(dataJLV.habilidades.frontend, contenedorSFront);
 cargarSkills(dataJLV.habilidades.backend, contenedorSBack);
+cargarSkills(dataJLV.habilidades.otras, contenedorSOtras);
