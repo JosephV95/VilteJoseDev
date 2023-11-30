@@ -362,7 +362,6 @@ section {
   border-radius: 10px;
   border: 2px groove rgba(18, 79, 164, 0.901);
   position: relative;
-  /* margin: 5px 5px; */
   height: auto;
 
   overflow: hidden;
@@ -380,7 +379,7 @@ section {
 
   .item-proyect:hover.item-proyect .detailProyect .text-pro{
     top: .7rem;
-    height: 50%;
+    height: 45.5%;
     /* con el overflow auto el scroll aparecera cuando sea necesario (en responsive mobile) y no todo el tiempo */
     overflow: auto;
   } 
@@ -393,17 +392,18 @@ section {
 /*? estilos para las tecnologias en los proyectos  */
 .item-proyect .detailProyect .tecItem{ 
   line-height: 1;
-  border: 1px solid rgba(128, 128, 128, 0.479);
-  padding: 1px 3px;
+  padding: 2px 3px;
+  border: 1px solid #9a9a9a7a;
   border-radius: 5px;
+  background-color: rgba(12, 20, 47, 0.7);
 }
 
 /*? estilos para el div con la descripcion del proyecto */
 .item-proyect .detailProyect .text-pro{
   position: absolute;
-  padding: 0 5px;
+  padding: 0 5px 0 2px;
   bottom: -20rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .item-proyect .links{
   position: relative;
