@@ -32,7 +32,8 @@ const dataJLV = {
     { 
       titulo: "Desarrollador Freelance",
       fecha: "2023 - Presente",
-      descripcion: `Desarrollador Web Freelance apasionado y autodidacta, especializado en la creación de proyectos innovadores. Mi enfoque se centra en la aplicación práctica de los conocimientos adquiridos, demostrando habilidades sólidas en la resolución de problemas y la adaptabilidad a las últimas tendencias tecnológicas. Busco oportunidades para colaborar en desafíos emocionantes y contribuir al éxito de proyectos dinámicos.`
+      instituto: "",
+      descripcion: `Desarrollador Web Freelance apasionado y especializado en la creación de proyectos dinámicos e innovadores. Destaco por la aplicación práctica de mis conocimientos, demostrando habilidades sólidas en la resolución de problemas y una adaptabilidad proactiva a las tendencias tecnológicas emergentes. `
     },
   ],
   habilidades: {
@@ -225,9 +226,9 @@ cargarAbout()
 function cargarProyectos(unArray) {
     let infoProyectos = ""
     unArray.forEach((ev)=>{ infoProyectos +=
-      `<div class="col-md-6 col-lg-5">
+      `<div class="col-md-6 col-lg-5"  data-aos="zoom-in">
         <div class="item-proyect">
-          <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}">
+          <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}" > 
           <div class="detailProyect mt-1">
             <h5>${ev.nombre}</h5>
             <div class="text-pro">
@@ -250,7 +251,6 @@ function cargarProyectos(unArray) {
     })
     contenedorProyectos.innerHTML = infoProyectos
 }
-
 cargarProyectos(dataJLV.proyectos)
 
 function cargarSkills(array, unContenedor) {
@@ -284,6 +284,5 @@ function cargarEducOExp(unArray, unContenedor){
   });
   unContenedor.innerHTML = infoACargar.join('')
 }
-
 cargarEducOExp(dataJLV.educación, contenedorEducacion);
 cargarEducOExp(dataJLV.experiencia, contenedorExperiencia)
