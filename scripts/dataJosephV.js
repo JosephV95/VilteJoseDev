@@ -65,6 +65,10 @@ const dataJLV = {
         { name: "Sass",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg`,
         },
+        { name: "Vite",
+          url: `https://avatars.githubusercontent.com/u/65625612?s=280&v=4`,
+        },
+        
       ],
       backend: [
         { name: "Node.js",
@@ -96,6 +100,10 @@ const dataJLV = {
         { name: "Github",
           url: `https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png`,
         },
+        { name: "Visual Studio Code",
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg`,
+        },
+        
         { name:"Metodología SCRUM",
           url:"https://seeklogo.com/images/S/scrum-logo-B057CBD9B8-seeklogo.com.png"
         },
