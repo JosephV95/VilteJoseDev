@@ -36,10 +36,11 @@ a:hover {
 }
 
 #header .profile img {
-  margin: 15px auto;
+  margin: 20px auto 12px;
   display: block;
   width: 150px;
-  border: 5px solid #2c2f3f;
+  border: 5px solid #2c2f3f50;
+  box-shadow: rgb(220, 220, 220) 0 0 3px, rgb(220, 220, 220) 0 0 5px, rgb(220, 220, 220) 0 0 7px ;
 }
 
 #header .profile h1 {
@@ -118,7 +119,7 @@ a:hover {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 12px 15px;
+  padding: 7px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
