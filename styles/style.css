@@ -393,8 +393,8 @@ section {
 /*? estilos para las tecnologias en los proyectos  */
 .item-proyect .detailProyect .tecItem{ 
   line-height: 1;
-  padding: 2px 3px;
-  border: 1px solid #9a9a9a7a;
+  padding: 2px;
+  /* border: 1px solid #9a9a9a7a; */
   border-radius: 5px;
   background-color: rgba(12, 20, 47, 0.7);
 }
