@@ -24,10 +24,10 @@ function cargarProyectos(unArray) {
               <p>${ev.descripcion} </p>
             </div>
             
-            <p class="d-inline" ><b><i>Tecnologías utilizadas:</i></b></p>
+            <p class="d-inline" ><b><i>Tecnologías:</i></b></p>
               ${ev.tecnologias.map(tecnologia => `
                 <span class="d-inline-block ms-1 tecItem">
-                  <img src=${tecnologia.url} height="20px" /> <p class="d-inline pt-2">${tecnologia.name} </p>
+                  <img src=${tecnologia.url} height="20px" />  <!-- <p class="d-inline pt-0">${tecnologia.name}</p> -->
                 </span>`).join('')}
           </div>
           <div class="links row mt-2">
