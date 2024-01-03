@@ -7,6 +7,8 @@ const contenedorSOtras = document.getElementById("contenedorSOtras");
 const contenedorEducacion = document.getElementById("contenedorEduc");
 const contenedorExperiencia = document.getElementById("contenedorExp");
 
+
+
 function cargarAbout() {
   contenedorSobreMi.innerHTML = dataJLV.sobreMi  
 }
@@ -27,7 +29,7 @@ function cargarProyectos(unArray) {
             <p class="d-inline" ><b><i>Tecnologías:</i></b></p>
               ${ev.tecnologias.map(tecnologia => `
                 <span class="d-inline-block ms-1 tecItem">
-                  <img src=${tecnologia.url} height="20px" />  <!-- <p class="d-inline pt-0">${tecnologia.name}</p> -->
+                  <img src=${tecnologia.url} height="20px"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title=${tecnologia.name} >
                 </span>`).join('')}
           </div>
           <div class="links row mt-2">
@@ -41,6 +43,8 @@ function cargarProyectos(unArray) {
     contenedorProyectos.innerHTML = infoProyectos
 }
 cargarProyectos(dataJLV.proyectos)
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 function cargarSkills(array, unContenedor) {
   let dataSkills = array.map(skill => {
