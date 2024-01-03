@@ -43,8 +43,10 @@ function cargarProyectos(unArray) {
     contenedorProyectos.innerHTML = infoProyectos
 }
 cargarProyectos(dataJLV.proyectos)
+//! Configuracion para el funcionamiento de Tooltips de Bootstrap (que se esta usando en las tecnologias en los proyectos) 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+// -------------------
 
 function cargarSkills(array, unContenedor) {
   let dataSkills = array.map(skill => {
