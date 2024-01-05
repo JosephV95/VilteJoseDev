@@ -32,7 +32,9 @@ a:hover {
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
-  overflow-y: auto;
+
+  /*! Con esto se quita el scroll que aparecia en el nav en algunas pantallas */
+  /* overflow-y: hidden;  */
 }
 
 #header .profile img {
