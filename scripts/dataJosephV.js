@@ -118,6 +118,25 @@ const dataJLV = {
     },
     proyectos: [
       {
+        nombre: "Resto Delicous",
+        descripcion: `Aplicación Web Full Stack con frontend desarrollado en React y JavaScript, haciendo uso de Redux para el manejo de estados. 
+          En el backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
+        img: "assets/img/proyect7.jpg",
+        tecnologias: [
+          { name: "React",
+            url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
+          },
+          { name: "Redux",
+            url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg`,
+          },
+          { name: "Javascript",
+            url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
+          },
+        ],
+        demo: "https://mytinerarydev.netlify.app/",
+        repo: "https://github.com/JosephV95/mytinerary-joseVilte",
+      },
+      {
         nombre: "MyTinerary",
         descripcion: `Aplicación Web Full Stack con frontend desarrollado en React y JavaScript, haciendo uso de Redux para el manejo de estados. 
           En el backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
