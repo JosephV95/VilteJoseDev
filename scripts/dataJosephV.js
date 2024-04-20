@@ -143,8 +143,8 @@ const dataJLV = {
       },
       {
         nombre: "MyTinerary",
-        descripcion: `Aplicación Web Full Stack con frontend desarrollado en React y JavaScript, haciendo uso de Redux para el manejo de estados. 
-          En el backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
+        descripcion: `Proyecto Full Stack con Frontend desarrollado en React y haciendo uso de Redux para el manejo de estados. 
+          En Backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
         img: "assets/img/proyect5.jpg",
         tecnologias: [
           { name: "React",
