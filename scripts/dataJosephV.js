@@ -134,8 +134,11 @@ const dataJLV = {
           { name: "Javascript",
             url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
           },
+          { name: "Tailwind",
+            url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg`,
+          },
         ],
-        demo: "https://mytinerarydev.netlify.app/",
+        demo: "https://resto-delicious.netlify.app/",
         repo: "https://github.com/JosephV95/mytinerary-joseVilte",
       },
       {
