@@ -118,9 +118,8 @@ const dataJLV = {
     },
     proyectos: [
       {
-        nombre: "Resto Delicous",
-        descripcion: `Aplicación Web Full Stack con frontend desarrollado en React y JavaScript, haciendo uso de Redux para el manejo de estados. 
-          En el backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
+        nombre: "Resto Delicious",
+        descripcion: `Plantilla de Landing Page para un Restaurante, diseñada con React para el frontend y estilizada con Tailwind CSS. Se han integrado librerías como Redux para la gestión de estados, así como otras para la aplicación de ciertos efectos y transiciones específicas.`,
         img: "assets/img/proyect7.jpg",
         tecnologias: [
           { name: "React",
