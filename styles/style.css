@@ -372,7 +372,7 @@ section {
 .item-proyect .img-fluid{
   opacity: .8;
   max-height: 14.5rem;
-  transition-duration: .5s;
+  transition-duration: .8s;
 }
 @media only screen and (min-width: 350px){
   /*! por algun motivo el .item-proyec debe estar pegado al hover para funcionr correctamente */
@@ -381,10 +381,10 @@ section {
   }
 
   .item-proyect:hover.item-proyect .detailProyect .text-pro{
-    top: .7rem;
     height: 45.5%;
     /* con el overflow auto el scroll aparecera cuando sea necesario (en responsive mobile) y no todo el tiempo */
     overflow: auto;
+    opacity: 1;  /* Cambia a opacidad completa al hacer hover */
   } 
 }
 
@@ -400,16 +400,17 @@ section {
   border-radius: 5px;
   background-color: rgba(12, 20, 47, 0.7);
 }
-
 /*? estilos para el div con la descripcion del proyecto */
 .item-proyect .detailProyect .text-pro{
   position: absolute;
   padding: 0 5px 0 2px;
-  bottom: -20rem;
+  top: 0.7rem;
   font-size: 1rem;
   line-height: 1.2;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 1s ease; /* Transición de 1 segundo */
 }
 .item-proyect .links{
   position: relative;
