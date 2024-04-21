@@ -403,7 +403,7 @@ section {
 /*? estilos para el div con la descripcion del proyecto */
 .item-proyect .detailProyect .text-pro{
   position: absolute;
-  padding: 0 5px 0 2px;
+  padding: 0 5px 0 0;
   top: 0.7rem;
   font-size: 1rem;
   line-height: 1.2;
