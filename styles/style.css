@@ -372,8 +372,8 @@ section {
 .item-proyect .img-fluid{
   opacity: .8;
   max-height: 14.5rem;
+  transition-duration: .5s;
 }
-
 @media only screen and (min-width: 350px){
   /*! por algun motivo el .item-proyec debe estar pegado al hover para funcionr correctamente */
   .item-proyect:hover.item-proyect .img-fluid{
