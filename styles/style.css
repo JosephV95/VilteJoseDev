@@ -368,6 +368,12 @@ section {
   height: auto;
 
   overflow: hidden;
+  transition: box-shadow 1.5s ease;
+}
+.item-proyect:hover{
+  border: 2px solid #388bffe6;
+  box-shadow: 0 0 10px #388bffe6, 0 0 15px #388bffe6;
+  transition: border 1s ease;
 }
 .item-proyect .img-fluid{
   opacity: .8;
