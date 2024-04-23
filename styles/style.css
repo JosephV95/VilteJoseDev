@@ -43,7 +43,7 @@ a:hover {
   display: block;
   width: 140px;
   border: 3px solid rgba(8, 33, 67, 0.901);
-  box-shadow:  0 0 7px #388bffe6, #388bffe6 0 0 15px;
+  box-shadow:  0 0 7px #388bffe6, #4894ffe6 0 0 15px;
 }
 
 #header .profile h1 {
