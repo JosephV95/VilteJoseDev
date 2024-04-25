@@ -1,6 +1,6 @@
 const dataJLV = {
-    sobreMi: ` <p>💻 ¡Bienvenido! Soy un entusiasta Desarrollador Full Stack, con un mayor enfoque en el stack MERN (MongoDB, Express.js, React.js, Node.js). 
-    Mi portafolio presenta proyectos que demuestran mi pasión y dedicación por el desarrollo web. Disfruto afrontar nuevos desafíos y cada línea de código refleja mi compromiso con el crecimiento continuo.</p>
+    sobreMi: ` <p>💻 ¡Bienvenido! Soy un entusiasta Desarrollador Full Stack, con un mayor enfoque en el stack MERN (MongoDB, Express.js, React.js, Node.js).<br>
+    Este portfolio muestra proyectos que reflejan mi compromiso y dedicación por el desarrollo web. Como desarrollador disfruto afrontar nuevos desafíos y cada línea de código representa mi búsqueda constante de crecimiento y mejora.</p>
     `,
     educación: [
       { 
