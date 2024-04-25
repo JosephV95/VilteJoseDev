@@ -41,7 +41,7 @@ a:hover {
 #header .profile img {
   margin: 20px auto 12px;
   display: block;
-  width: 140px;
+  width: 128px;
   filter: brightness(0.8);
   border: 3px solid rgba(8, 33, 67, 0.901);
   box-shadow:  0 0 7px #388bffe6, #4894ffe6 0 0 15px;
