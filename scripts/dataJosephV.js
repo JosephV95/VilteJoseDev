@@ -139,7 +139,7 @@ const dataJLV = {
           },
         ],
         demo: "https://resto-delicious.netlify.app/",
-        repo: "https://github.com/JosephV95/mytinerary-joseVilte",
+        repo: "https://github.com/JosephV95",
       },
       {
         nombre: "MyTinerary",
