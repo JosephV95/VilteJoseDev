@@ -1,5 +1,5 @@
 const dataJLV = {
-    sobreMi: ` <p><span style="color:#2ca6df; font-weight:bolder">Soy un Desarrollador Full Stack</span> con mayor especialización en el stack MERN (MongoDB, Express.js, React.js, Node.js).<br>
+    sobreMi: `<p><span style="color:#2ca6df; font-weight:bolder">Soy un Desarrollador Full Stack</span> con mayor especialización en el stack MERN (MongoDB, Express.js, React.js, Node.js).<br>
     Mi enfoque está en el diseño web creativo y funcional. Disfruto enfrentar nuevos desafíos y cada línea de código que escribo refleja mi compromiso con el crecimiento y la mejora continua. <br>
     <i>Estoy aquí para ayudarte a dar vida a tus proyectos con profesionalismo y creatividad. Si necesitas un colaborador apasionado y dedicado, ¡no dudes en contactarme!</i></p>
     `,
