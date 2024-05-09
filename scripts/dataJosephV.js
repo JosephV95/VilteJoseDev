@@ -123,7 +123,7 @@ const dataJLV = {
     proyectos: [
       {
         nombre: "Resto Delicious",
-        descripcion: `Landing Page para un Restaurante, diseñada con React para el frontend y estilizada con Tailwind CSS. Se han integrado librerías como Redux para la gestión de estados, así como otras para la aplicación de ciertos efectos y transiciones específicas.`,
+        descripcion: `Landing Page para Restaurante, diseñada con React para el frontend y estilizada con Tailwind CSS. Se han integrado librerías como Redux para la gestión de estados, así como otras para la aplicación de ciertos efectos y transiciones específicas.`,
         img: "assets/img/proyect7.jpg",
         tecnologias: [
           { name: "React",
