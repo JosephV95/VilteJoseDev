@@ -32,6 +32,7 @@ a:hover {
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
+  border-right: solid 2px #149ddddb;
 
   /*! Con esto se quita el scroll que aparecia en el nav en algunas pantallas */
   /* overflow-y: hidden;  */
