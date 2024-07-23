@@ -43,7 +43,7 @@ a:hover {
   margin: 20px auto 12px;
   display: block;
   width: 128px;
-  filter: brightness(0.8);
+  filter: brightness(0.87);
   border: 3px solid rgba(8, 33, 67, 0.901);
   box-shadow:  0 0 7px #388bffe6, #4894ffe6 0 0 15px;
 }
@@ -83,6 +83,7 @@ a:hover {
   background: #149ddd;
   color: #fff;
   text-decoration: none;
+  box-shadow: 0 0 10px #149ddd, 0 0 5px #149ddd;
 }
 
 #main {
