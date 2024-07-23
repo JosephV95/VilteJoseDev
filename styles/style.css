@@ -131,8 +131,8 @@ a:hover {
   font-size: 15px;
   
 }
-.nav-menu a:hover{
-  filter: drop-shadow(0 0 5px #149dddc8) drop-shadow(0 0 10px #149ddd);
+.nav-menu a:hover span{
+  filter: drop-shadow(0 0 5px #149ddd) drop-shadow(0 0 10px #149ddd);
 }
 
 .nav-menu a i,
@@ -155,7 +155,7 @@ a:hover {
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
   color: #149ddd;
-  filter: drop-shadow(0 0 5px #149dddc8);
+  filter: drop-shadow(0 0 5px #149dddc8) drop-shadow(0 0 10px #149ddd);
 }
 
 /* Mobile Navigation */
