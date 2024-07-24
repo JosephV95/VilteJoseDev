@@ -439,6 +439,7 @@ section {
 }
 
 
+/*? --------------------------------------------------------  */
 /*todo Para editar la barra de scroll  */
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
