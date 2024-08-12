@@ -51,7 +51,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 function cargarSkills(array, unContenedor) {
   let dataSkills = array.map(skill => {
     return `
-    <span class="text-center " style="width: 8rem;">
+    <span class="text-center skillTecItem" style="width: 8rem;">
       <span>
         <img src=${skill.url} height="60px" />
       </span>
