@@ -76,7 +76,7 @@ const dataJLV = {
       ],
       backend: [
         { name: "Node.js",
-          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg`,
+          url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg`,
         },
         { name: "Express.js",
           url: `https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png`,
