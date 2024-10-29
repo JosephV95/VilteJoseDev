@@ -48,7 +48,7 @@ const dataJLV = {
         { name: "Javascript",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg`,
         },
-        { name: "React.js",
+        { name: "React",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg`,
         },
         { name: "Redux",
