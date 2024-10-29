@@ -22,12 +22,12 @@ const dataJLV = {
         instituto: "Argentina Programa 4.0",
         descripcion: "Curso de Desarrollador Web Full-Stack donde se estudian tecnologías de desarrollo Frontend y Backend."
       },
-      { 
-        titulo: "TÉCNICO UNIVERSITARIO EN MANTENIMIENTO INDUSTRIAL",
-        fecha: "2015 - 2018",
-        instituto: "ITU - Instituto Tecnológico Universitario (Universidad Nacional de Cuyo)",
-        descripcion: "Aptitudes en electricidad, mecánica, automatización, informática, electrónica, entre otras."
-      },
+      // { 
+      //   titulo: "TÉCNICO UNIVERSITARIO EN MANTENIMIENTO INDUSTRIAL",
+      //   fecha: "2015 - 2018",
+      //   instituto: "ITU - Instituto Tecnológico Universitario (Universidad Nacional de Cuyo)",
+      //   descripcion: "Aptitudes en electricidad, mecánica, automatización, informática, electrónica, entre otras."
+      // },
     ],
     experiencia: [
       { 
