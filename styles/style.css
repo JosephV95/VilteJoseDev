@@ -32,7 +32,7 @@ a:hover {
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
-  border-right: solid 2px #149ddddb;
+  border-right: solid 2px #149ddd72;
 
   /*! Con esto se quita el scroll que aparecia en el nav en algunas pantallas */
   /* overflow-y: hidden;  */
@@ -219,7 +219,7 @@ a:hover {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -228,7 +228,7 @@ a:hover {
 #hero p {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
