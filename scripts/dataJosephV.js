@@ -144,8 +144,8 @@ const dataJLV = {
       },
       {
         nombre: "MyTinerary",
-        descripcion: `Proyecto Full Stack con Frontend desarrollado en React y haciendo uso de Redux para el manejo de estados. 
-          En Backend, se creó una API REST totalmente funcional con operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar la información. Se emplearon Node.js y Express, con MongoDB como base de datos.`,
+        descripcion: `Plataforma para gestionar itinerarios de viaje, donde los usuarios pueden registrarse, iniciar sesión y crear, editar o eliminar sus propios itinerarios. Las rutas están protegidas para garantizar que solo los usuarios autorizados accedan a ciertas funciones. 
+          <br></br>La aplicación combina un diseño moderno con React y una base de datos segura para almacenar la información.`,
         img: "assets/img/proyect5.jpg",
         tecnologias: [
           { name: "React",
