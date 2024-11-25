@@ -22,7 +22,7 @@ function cargarProyectos(unArray) {
           <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}" > 
           <div class="detailProyect mt-1">
             <h5>${ev.nombre}</h5>
-            <div class="text-pro">
+            <div class="text-pro d-flex align-items-start align-items-lg-center ">
               <p>${ev.descripcion} </p>
             </div>
             
