@@ -372,7 +372,7 @@ section {
   background-color: #040b14;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 7px 5px;
   border-radius: 10px;
   border: 2px groove rgba(18, 79, 164, 0.901);
   position: relative;
@@ -391,22 +391,16 @@ section {
   max-height: 14.5rem;
   transition: opacity .5s ease;
 }
-@media only screen and (min-width: 350px){
+/*! Se comento el mediaquery  porque se mejoro el diseño  */
+/* @media only screen and (min-width: 350px){ */
   /*! por algun motivo el .item-proyec debe estar pegado al hover para funcionr correctamente */
   .item-proyect:hover.item-proyect .img-fluid{
-    opacity: .15;
+    opacity: .25;
   }
-
-  .item-proyect:hover.item-proyect .detailProyect .text-pro{
-    height: 45.5%;
-    /* con el overflow auto el scroll aparecera cuando sea necesario (en responsive mobile) y no todo el tiempo */
-    overflow: auto;
-    opacity: 1;  /* Cambia a opacidad completa al hacer hover */
-  } 
-}
+/* } */
 
 .item-proyect .detailProyect{
-  padding-top: 8px;
+  padding-top: 5px;
  }
 
 /*? estilos para las tecnologias en los proyectos  */
@@ -418,17 +412,23 @@ section {
   background-color: rgba(12, 20, 47, 0.7);
 }
 /*? estilos para el div con la descripcion del proyecto */
-.item-proyect .detailProyect .text-pro{
+.item-proyect .text-pro{
   position: absolute;
-  padding: 0 5px 0 0;
-  top: 0.7rem;
-  font-size: 1rem;
-  line-height: 1.15;
+  height: 100%;
+  top: 0;
+  /* con el overflow auto el scroll aparecera cuando sea necesario (en responsive mobile) y no todo el tiempo */
+  overflow: auto;
+  /* padding: 0 5px 0 0; */
+  /* line-height: 1.15; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
   opacity: 0; /* Inicialmente oculto */
-  transition: opacity 1s ease; /* Transición de 1 segundo */
+  transition: opacity .7s ease; /* Transición de 1 segundo */
 }
+.item-proyect:hover.item-proyect .text-pro{
+  opacity: 1;  /* Cambia a opacidad completa al hacer hover */
+} 
+
 .item-proyect .links{
   position: relative;
   /* display: flex; */

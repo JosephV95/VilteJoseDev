@@ -19,12 +19,15 @@ function cargarProyectos(unArray) {
     unArray.forEach((ev)=>{ infoProyectos +=
       `<div class="col-md-6 col-lg-5"  data-aos="zoom-in">
         <div class="item-proyect">
-          <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}" > 
-          <div class="detailProyect mt-1">
-            <h5>${ev.nombre}</h5>
-            <div class="text-pro d-flex align-items-start align-items-lg-center ">
+          <div class="position-relative">
+            <img src=${ev.img} class="img-fluid rounded " alt="proyecto${ev.name}" > 
+            <div class="text-pro lh-sm d-flex align-items-start align-items-sm-center align-items-md-start align-items-lg-center">
               <p>${ev.descripcion} </p>
             </div>
+          </div>
+          <div class="detailProyect mt-1">
+            <h5>${ev.nombre}</h5>
+            
             
             <p class="d-inline" ><b><i>Tecnologías:</i></b></p>
               ${ev.tecnologias.map(tecnologia => `
@@ -33,7 +36,7 @@ function cargarProyectos(unArray) {
                 </span>`).join('')}
           </div>
           <div class="links row mt-2">
-            <a href=${ev.demo} target="_blank" class="btn btn-outline-warning "><i class="bx bx-link"></i> Demo</a>
+            <a href=${ev.demo} target="_blank" class="btn btn-outline-info "><i class="bx bx-link"></i> Ver sitio</a>
             <a href=${ev.repo} target="_blank" class="btn btn-outline-primary "><i class="bx bxl-github"></i> Repo</a>
           </div>
         </div>
