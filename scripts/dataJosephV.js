@@ -145,7 +145,7 @@ const dataJLV = {
       {
         nombre: "MyTinerary",
         descripcion: `Plataforma para gestionar itinerarios de viaje, donde los usuarios pueden registrarse, iniciar sesión y crear, editar o eliminar sus propios itinerarios. Las rutas están protegidas para garantizar que solo los usuarios autorizados accedan a ciertas funciones. 
-          <br>La aplicación combina un diseño moderno con React y una base de datos segura para almacenar la información.`,
+          <br>La aplicación combina un diseño moderno con React y una base de datos para almacenar la información.`,
         img: "assets/img/proyect5.jpg",
         tecnologias: [
           { name: "React",
