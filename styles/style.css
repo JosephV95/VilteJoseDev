@@ -200,24 +200,6 @@ a:hover {
   background-size: cover;
   background-position: center;
 }
-#bg-Separador{
-  width: 450%;
-  height: 40vh;
-  /* background-color: blueviolet; */
-}
-@media (max-width: 470px) {
-  #bg-Separador{
-    width: 700%;
-    height: 30vh;
-  } 
-}
-@media (min-width: 1024px) {
-  #bg-Separador{
-    width: 350%;
-    height: 65vh;
-  } 
-}
-
 #hero:before {
   content: "";
   /* background: rgba(5, 13, 24, 0.7); */
@@ -230,6 +212,27 @@ a:hover {
   z-index: 1;
 }
 
+/** Estilos para pantallas medianas  */
+#hero #bg-Separador{
+  width: 450%;
+  height: 40vh;
+}
+/** Estilos para pantallas pequeñas  */
+@media (max-width: 470px) {
+  #hero #bg-Separador{
+    width: 700%;
+    height: 30vh;
+  } 
+}
+/** Estilos para pantallas grandes  */
+@media (min-width: 1024px) {
+  #hero #bg-Separador{
+    width: 350%;
+    height: 65vh;
+  } 
+}
+
+/*? Estilos para los textos del Hero  */
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -248,7 +251,7 @@ a:hover {
   color: #fff;
   margin-bottom: 50px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 
