@@ -196,9 +196,26 @@ a:hover {
   width: 100%;
   height: 100vh;
   /* background: url("../assets/img/background.jpg"); */
-  background-image: linear-gradient(45deg, #2a5298 14%, #162f59 59%);
+  background-image: linear-gradient(270deg, #095eb8 0%, #002955 90%);
   background-size: cover;
   background-position: center;
+}
+#bg-Separador{
+  width: 450%;
+  height: 40vh;
+  /* background-color: blueviolet; */
+}
+@media (max-width: 470px) {
+  #bg-Separador{
+    width: 700%;
+    height: 30vh;
+  } 
+}
+@media (min-width: 1024px) {
+  #bg-Separador{
+    width: 350%;
+    height: 65vh;
+  } 
 }
 
 #hero:before {
