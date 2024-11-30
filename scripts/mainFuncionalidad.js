@@ -36,8 +36,8 @@ function cargarProyectos(unArray) {
                 </span>`).join('')}
           </div>
           <div class="links row mt-2">
-            <a href=${ev.demo} target="_blank" class="btn btn-outline-info "><i class="bx bx-link"></i> Ver sitio</a>
-            <a href=${ev.repo} target="_blank" class="btn btn-outline-primary "><i class="bx bxl-github"></i> Repo</a>
+            <a href=${ev.demo} target="_blank" class="btn btn-outline-info "><i class='bx bx-link-external'></i> Ver sitio</a>
+            <a href=${ev.repo} target="_blank" class="btn btn-outline-primary " style="filter:contrast(2)"><i class="bx bxl-github"></i> Repo</a>
           </div>
         </div>
       </div>
