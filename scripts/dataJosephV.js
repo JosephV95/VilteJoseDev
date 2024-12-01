@@ -34,7 +34,11 @@ const dataJLV = {
         titulo: "Desarrollador Freelance",
         fecha: "2023 - Presente",
         instituto: "",
-        descripcion: `Desarrollador Web Freelance apasionado y especializado en la creación de proyectos dinámicos e innovadores. Destaco por la aplicación práctica de mis conocimientos, demostrando habilidades sólidas en la resolución de problemas y una adaptabilidad proactiva a las tendencias tecnológicas emergentes. `
+        descripcion: `He desarrollo aplicaciones web y proyectos personalizados, utilizando
+          tecnologías modernas tanto en Frontend como en Backend, con un enfoque
+          en diseño atractivo y funcionalidad. También he aplicado buenas prácticas
+          de programación y me mantengo en constante aprendizaje de nuevas
+          herramientas y metodologías para mejorar la calidad de mi trabajo.`
       },
     ],
     habilidades: {
