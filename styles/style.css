@@ -524,6 +524,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*? Efectos para los items de las Skills */
+.skillTecItem img{
+  transition: filter .5s ease;
+}
 .skillTecItem:hover.skillTecItem img{
   filter: drop-shadow(0 0 5px rgb(0, 195, 255)) drop-shadow(0 0 2px rgba(36, 225, 254, 0.9)) ;
 }
