@@ -95,7 +95,7 @@ const dataJLV = {
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg`,
         },
         { name: "JWT",
-          url: `https://seeklogo.com/images/J/jwt-logo-65D86B4640-seeklogo.com.png`,
+          url: `https://github.com/JosephV95/VilteJoseDev/blob/main/assets/icons/JWTlogo.png?raw=true`,
         },
         { name: "Postman",
           url: `https://cdn.worldvectorlogo.com/logos/postman.svg`,
@@ -120,7 +120,7 @@ const dataJLV = {
         },
         
         { name:"Metodología SCRUM",
-          url:"https://seeklogo.com/images/S/scrum-logo-B057CBD9B8-seeklogo.com.png"
+          url:"https://github.com/JosephV95/VilteJoseDev/blob/main/assets/icons/Srumlogo.png?raw=true"
         },
       ]
     },
