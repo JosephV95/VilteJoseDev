@@ -171,7 +171,7 @@ const dataJLV = {
             url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg`,
           },
           { name: "JWT",
-            url: `https://seeklogo.com/images/J/jwt-logo-65D86B4640-seeklogo.com.png`,
+            url: `https://github.com/JosephV95/VilteJoseDev/blob/main/assets/icons/JWTlogo.png?raw=true`,
           },
           { name: "Bootstrap",
             url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg`,
