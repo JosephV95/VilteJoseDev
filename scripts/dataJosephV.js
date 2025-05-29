@@ -204,7 +204,7 @@ const dataJLV = {
             url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg`,
           },
         ],
-        demo: "https://harrypotter-data.web.app/home",
+        demo: "https://harrypotter-data.netlify.app",
         repo: "https://github.com/JosephV95/Harry-Potter-Data.git",
       },
       {
