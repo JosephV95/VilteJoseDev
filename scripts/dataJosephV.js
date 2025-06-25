@@ -16,12 +16,12 @@ const dataJLV = {
         instituto: "MindHub LA",
         descripcion: "Bootcamp centrado en el aprendizaje Frontend mediante la metodología de proyectos reales, evolucionando en dificultad para adquirir las habilidades de un Desarrollador Web."
       },
-      { 
-        titulo: "DESARROLLADOR WEB FULL STACK",
-        fecha: "Diciembre 2021 - Junio 2022",
-        instituto: "Argentina Programa 4.0",
-        descripcion: "Curso de Desarrollador Web Full-Stack donde se estudian tecnologías de desarrollo Frontend y Backend."
-      },
+      // { 
+      //   titulo: "DESARROLLADOR WEB FULL STACK",
+      //   fecha: "Diciembre 2021 - Junio 2022",
+      //   instituto: "Argentina Programa 4.0",
+      //   descripcion: "Curso de Desarrollador Web Full-Stack donde se estudian tecnologías de desarrollo Frontend y Backend."
+      // },
       // { 
       //   titulo: "TÉCNICO UNIVERSITARIO EN MANTENIMIENTO INDUSTRIAL",
       //   fecha: "2015 - 2018",
