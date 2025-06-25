@@ -109,7 +109,7 @@ const dataJLV = {
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg`,
         },
         { name: "Github",
-          url: `https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png`,
+          url: `https://github.com/JosephV95/VilteJoseDev/blob/main/assets/icons/Github.png?raw=true`,
         },
         { name: "NPM",
           url: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg`,
